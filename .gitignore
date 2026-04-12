@@ -1,0 +1,17 @@
+# Dependency folders
+node_modules/
+jspm_packages/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local session files (CRITICAL: Do not upload your actual login data)
+session/
+auth_info_baileys/
+.env
+
+# OS files
+.DS_Store
+thumbs.db
