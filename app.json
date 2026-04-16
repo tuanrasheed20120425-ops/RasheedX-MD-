@@ -1,31 +1,39 @@
 {
-  "name": "DANUWA-MD",
-  "description": "Javascript WhatsApp bot made by Danuka Dissanayake",
-  "logo": "https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true",
-  "keywords": ["DANUWA-MD"],
+  "name": "RasheedX-MD",
+  "description": "WhatsApp Multi-Device Bot developed by Rasheed",
+  "logo": "https://github.com/RasheedX/RasheedX-MD/raw/main/assets/logo.png",
+  "keywords": ["whatsapp", "bot", "baileys", "rasheedx", "md"],
   "success_url": "/",
-
   "env": {
     "SESSION_ID": {
-      "description": "Put the session-id here.",
-      "required": true
-    },  
-
-    "ALIVE_IMG": {
-      "description": "Put your alive img here.",
+      "description": "Enter your Session ID here.",
       "required": true
     },
-    
+    "ALIVE_IMG": {
+      "description": "Paste a direct link for the Alive message image.",
+      "required": false,
+      "value": "https://i.ibb.co/example.jpg"
+    },
     "ALIVE_MSG": {
-      "description": "Put your alive msg here.",
-      "required": true
-    }   
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
+      "description": "Custom message for the .alive command.",
+      "required": false,
+      "value": "RasheedX MD is running... 🚀"
+    },
+    "PREFIX": {
+      "description": "The symbol used to trigger commands (e.g., . or !)",
+      "required": true,
+      "value": "."
+    },
+    "MODE": {
+      "description": "Set the bot to 'public' or 'private'.",
+      "required": true,
+      "value": "public"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
   "stack": "heroku-24"
 }
